@@ -138,3 +138,4 @@ setTimeout(clear, 100);
 setTimeout(clear, 50);
 setTimeout(clear, 200);
 setTimeout(clear, 300);
+setTimeout(clear, 800);
