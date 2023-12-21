@@ -1,5 +1,5 @@
 // script.js
-
+import { fetchSecretMessage } from './fetchMessage.js';
 // Function to add two numbers
 function addNumbers(a, b) {
   return a + b;
@@ -9,41 +9,41 @@ function addNumbers(a, b) {
 function calculateArea(width, height) {
   return width * height;
 }
-clear();
+
 // Function to reverse a string
 function reverseString(str) {
   return str.split('').reverse().join('');
 }
 
-fetchSecretMessage('task-1');
+fetchSecretMessage('task-1').then((secretMessage) => secretMessage);
 
 // Function to find the maximum number in an array
 function findMax(...nums) {
   return Math.max(...nums);
 }
-clear();
+
 // Function to check if a string is a palindrome
 function isPalindrome(word) {
   return word === word.split('').reverse().join('');
 }
 
-fetchSecretMessage('task-2');
+fetchSecretMessage('task-2').then((secretMessage) => secretMessage);
 
 // Function to count vowels in a string
 function countVowels(str) {
   return (str.match(/[aeiou]/gi) || []).length;
 }
-clear();
+
 // Fibonacci sequence function
 function fibonacci(n) {
   if (n <= 1) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-fetchSecretMessage('task-3');
+fetchSecretMessage('task-3').then((secretMessage) => secretMessage);
 
 // Function to sort an array
-clear();
+
 function sortArray(arr) {
   return arr.sort((a, b) => a - b);
 }
@@ -54,10 +54,10 @@ function factorial(n) {
   return n * factorial(n - 1);
 }
 
-fetchSecretMessage('task-4');
+fetchSecretMessage('task-4').then((secretMessage) => secretMessage);
 
 // Function to convert temperature from Celsius to Fahrenheit
-clear();
+
 function celsiusToFahrenheit(celsius) {
   return (celsius * 9) / 5 + 32;
 }
@@ -70,10 +70,10 @@ function isPrime(num) {
   return num > 1;
 }
 
-fetchSecretMessage('task-5');
+fetchSecretMessage('task-5').then((secretMessage) => secretMessage);
 
 // Function to find the longest word in a sentence
-clear();
+
 function findLongestWord(sentence) {
   const words = sentence.split(' ');
   return words.reduce((longest, currentWord) => {
@@ -81,7 +81,7 @@ function findLongestWord(sentence) {
   }, '');
 }
 
-fetchSecretMessage('task-6');
+fetchSecretMessage('task-6').then((secretMessage) => secretMessage);
 
 // Function to check if a year is a leap year
 function isLeapYear(year) {
@@ -89,15 +89,15 @@ function isLeapYear(year) {
 }
 
 // Function to calculate the sum of an array
-clear();
+
 function sumArray(arr) {
   return arr.reduce((sum, num) => sum + num, 0);
 }
 
-fetchSecretMessage('task-7');
+fetchSecretMessage('task-7').then((secretMessage) => secretMessage);
 
 // Function to generate a random number between two values
-clear();
+
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -107,10 +107,10 @@ function containsSubstring(str, substring) {
   return str.indexOf(substring) !== -1;
 }
 
-fetchSecretMessage('task-8');
+fetchSecretMessage('task-8').then((secretMessage) => secretMessage);
 
 // Function to convert a string to uppercase
-clear();
+
 function toUpperCase(str) {
   return str.toUpperCase();
 }
@@ -120,22 +120,12 @@ function arrayContains(arr, element) {
   return arr.includes(element);
 }
 
-fetchSecretMessage('task-9');
+fetchSecretMessage('task-9').then((secretMessage) => secretMessage);
 
 // Function to replace a substring in a string
-clear();
+
 function replaceSubstring(str, oldSubstring, newSubstring) {
   return str.replace(oldSubstring, newSubstring);
 }
 
-fetchSecretMessage('task-10');
-
-function clear() {
-  const messageContainer = document.getElementById('messageContainer');
-  messageContainer.innerText = '';
-}
-setTimeout(clear, 100);
-setTimeout(clear, 50);
-setTimeout(clear, 200);
-setTimeout(clear, 300);
-setTimeout(clear, 800);
+fetchSecretMessage('task-10').then((secretMessage) => secretMessage);
