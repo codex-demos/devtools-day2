@@ -15,7 +15,10 @@ function reverseString(str) {
   return str.split('').reverse().join('');
 }
 
-fetchSecretMessage('task-1').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-1').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to find the maximum number in an array
 function findMax(...nums) {
@@ -27,7 +30,10 @@ function isPalindrome(word) {
   return word === word.split('').reverse().join('');
 }
 
-fetchSecretMessage('task-2').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-2').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to count vowels in a string
 function countVowels(str) {
@@ -40,7 +46,10 @@ function fibonacci(n) {
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
-fetchSecretMessage('task-3').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-3').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to sort an array
 
@@ -54,7 +63,10 @@ function factorial(n) {
   return n * factorial(n - 1);
 }
 
-fetchSecretMessage('task-4').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-4').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to convert temperature from Celsius to Fahrenheit
 
@@ -70,7 +82,10 @@ function isPrime(num) {
   return num > 1;
 }
 
-fetchSecretMessage('task-5').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-5').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to find the longest word in a sentence
 
@@ -81,7 +96,10 @@ function findLongestWord(sentence) {
   }, '');
 }
 
-fetchSecretMessage('task-6').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-6').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to check if a year is a leap year
 function isLeapYear(year) {
@@ -94,7 +112,10 @@ function sumArray(arr) {
   return arr.reduce((sum, num) => sum + num, 0);
 }
 
-fetchSecretMessage('task-7').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-7').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to generate a random number between two values
 
@@ -107,7 +128,10 @@ function containsSubstring(str, substring) {
   return str.indexOf(substring) !== -1;
 }
 
-fetchSecretMessage('task-8').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-8').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to convert a string to uppercase
 
@@ -120,7 +144,10 @@ function arrayContains(arr, element) {
   return arr.includes(element);
 }
 
-fetchSecretMessage('task-9').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-9').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
 
 // Function to replace a substring in a string
 
@@ -128,4 +155,7 @@ function replaceSubstring(str, oldSubstring, newSubstring) {
   return str.replace(oldSubstring, newSubstring);
 }
 
-fetchSecretMessage('task-10').then((secretMessage) => secretMessage);
+fetchSecretMessage('task-10').then((secretMessage) => {
+  document.getElementById('messageContainer').innerText = secretMessage;
+  document.getElementById('messageContainer').innerText = '';
+});
